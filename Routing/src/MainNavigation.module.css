@@ -1,0 +1,23 @@
+.header {
+    max-width: 60rem;
+    margin: auto;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.list {
+    display: flex;
+    gap: 1rem;
+}
+
+.list a {
+    color: rgb(128, 129, 128);
+    text-decoration: none;
+}
+
+.list a:hover,
+.list a:active {
+    color: rgb(129, 128, 128);
+    text-decoration: underline;
+}

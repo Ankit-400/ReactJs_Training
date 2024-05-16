@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost:3000/events" method="POST">
+        <input type="text" name="eventName" placeholder="Event Name" />
+        {/* Add other form fields as needed */}
+        <button type="submit">Submit</button>
+    </form>
+    <form action="http://localhost:3000/events" method="GET">
+        <input type="text" name="eventName" placeholder="Event Name" />
+        {/* Add other form fields as needed */}
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
+
+
+<!-- 
+
+    - Action attribute is basically used in place of fetch like functions which is used to communicate between APIs. 
+
+    index.html - http://127.0.0.1:5500
+    backend server - http://localhost:3000
+
+    How it works : 
+
+    -> In case of POST req,
+    - As a value for action attr., write the url with the appropriate route to which the post req will hit. Url can be relative or absolute, but it must resolve complete path where your backend server is running. Here it is - http://localhost:3000/events. 
+    - Now the callback function defined for the specific route in the backend file, will be executed and then backend will respond back with some message or data to client.
+    - Now at client side after hitting the API, we will be redirected to the same URL which we have mentioned in action attribute. This page shows the data or message sent by server.
+    - Data which will be sent by client to server will not be added to the URL(unlike GET req), instead it will be added as the body of http req.
+
+    -> in case of GET req,
+    - As a value we have to pass appropriate URL with specific route where the req will hit. 
+    - Callback function for that route with GET req will be executed and it will respond back with message or data to client.
+    - Now client will be redirected to the url mentioned in action attribute, and it will show the data which is sent by the server as respond. 
+    - One more thing is that we will be redirected to the URL present in action with all the input value as key va;ue pair, separed by &, appended to that URL, as it is GET req.
+    
+ -->

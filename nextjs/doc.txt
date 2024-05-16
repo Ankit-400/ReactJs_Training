@@ -1,0 +1,10 @@
+NextJs bydefault supports server side rendering.
+
+Routes
+
+Routing is one of the famous feature of nextjs. 
+It can be defined as two ways..
+1) Inside pages folder, Name of file is considered as routes. 
+2) New folder can be created and it's name will considered as the route and it must contain the index.js file which represents page for /{name of folder}. 
+
+Nested paths/routes can be created with the second way.

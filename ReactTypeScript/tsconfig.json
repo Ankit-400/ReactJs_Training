@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    // The targetted version of js in which our code will be compiled or converted, as browser does not supports typescript.  
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    // Some default typescript libraries that are included and that influences which kind of types are known out of the box by our typescript code. These are built into typescript though we should list here. Some inbuilt and default types can be understood by tpescript.
+    "allowJs": true,
+    // Allowing .js files too. Also allows import from js file. Ts + Js mixed files can be used.
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    // It ensures strictest possible settings for project. Not allowing implicit any type values.
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
+    // jsx code should be supported and output codee should be generated.
+  },
+  "include": [
+    "src"
+  ]
+}

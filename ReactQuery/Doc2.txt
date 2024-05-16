@@ -1,0 +1,26 @@
+Priorly, suppose we wanted some data from server then we fetch that data from server. Then the client-side state management library like redux are used to provide that data to whole application. We only fetch data once and store it in to the cache then we return the data from cache subsequently. 
+
+But data we are getting from server is owned by server and not by client. Client have only
+borrowed that data from the server just to display it. So we should not treate server side state as client side state.
+
+React Query
+
+It works with any function that returns promise. It tries to keep your data as fresh as possible while at the same time showing data to the user as early as possible.
+
+The reactquery does not invoke the queryFn on every re-render, even with the default staleTime of zero.
+(StaleTime means the duration until a query transitions from fresh to stale-outdated. The time period for which our data remains fresh and up-to-date, and so that it can be read from cache only instead of http req).
+If the query is stale (which per default is: instantly), you will still get data from the cache, but a background refetch can happen under certain conditions.
+
+If the user goes to a different browser tab, and then comes back to your app, a background refetch will be triggered automatically, and data on the screen will be updated if something has changed on the server in the meantime. All of this happens without a loading spinner being shown, and your component will not re-render if the data is the same as you currently have in the cache.
+
+During development, this will probably be triggered more frequently, especially because focusing between the Browser DevTools and your app will also cause a fetch, so be aware of that. 
+
+gcTime: The duration until inactive queries will be removed from the cache. (5 min defaults)
+
+
+ReactQuery will trigger a refetch whenever the query key changes. So we can consider the query key as dependency list used in useEffect. So in normal case if our queryFn takes any paramets then we want to refetch whenever that parameter changes. So we simp-ly add that variable into the query key list.  
+
+
+useQuery hook is only used for GET requests. although we can write POST request with useQuery hook as we are writing the fetchFn by ourselfs only. 
+
+useMutation hook is more optimized for making POST req. This does not send the request when the page renders unlike useQuery, but it only sends the rewuest when we wanted to send it.

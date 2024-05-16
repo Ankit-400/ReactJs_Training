@@ -1,0 +1,90 @@
+[
+    {
+        "items": [
+            {
+                "id": "m1",
+                "name": "Mac & Cheese",
+                "price": "8.99",
+                "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+                "image": "images/mac-and-cheese.jpg",
+                "quantity": 1
+            },
+            {
+                "id": "m2",
+                "name": "Margherita Pizza",
+                "price": "12.99",
+                "description": "A classic pizza with fresh mozzarella, tomatoes, and basil on a thin and crispy crust.",
+                "image": "images/margherita-pizza.jpg",
+                "quantity": 2
+            },
+            {
+                "id": "m5",
+                "name": "Veggie Burger",
+                "price": "9.99",
+                "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+                "image": "images/veggie-burger.jpg",
+                "quantity": 6
+            }
+        ],
+        "customer": {
+            "name": "Ankit",
+            "email": "trying@gmail.com",
+            "street": "first street, india",
+            "postal-code": "264736",
+            "city": "Not named"
+        },
+        "id": "267.13696255160403"
+    },
+    {
+        "items": [
+            {
+                "id": "m1",
+                "name": "Mac & Cheese",
+                "price": "8.99",
+                "description": "Creamy cheddar cheese mixed with perfectly cooked macaroni, topped with crispy breadcrumbs. A classic comfort food.",
+                "image": "images/mac-and-cheese.jpg",
+                "quantity": 2
+            },
+            {
+                "id": "m5",
+                "name": "Veggie Burger",
+                "price": "9.99",
+                "description": "A juicy veggie patty served on a whole grain bun with lettuce, tomato, and a tangy sauce.",
+                "image": "images/veggie-burger.jpg",
+                "quantity": 2
+            },
+            {
+                "id": "m9",
+                "name": "Chicken Curry",
+                "price": "13.99",
+                "description": "Tender pieces of chicken simmered in a rich and aromatic curry sauce, served with basmati rice.",
+                "image": "images/chicken-curry.jpg",
+                "quantity": 1
+            },
+            {
+                "id": "m13",
+                "name": "Miso Ramen",
+                "price": "12.99",
+                "description": "A warming bowl of ramen with miso broth, tender pork, soft-boiled egg, and green onions.",
+                "image": "images/miso-ramen.jpg",
+                "quantity": 1
+            },
+            {
+                "id": "m19",
+                "name": "Lemon Cheesecake",
+                "price": "6.99",
+                "description": "A creamy cheesecake with a tangy lemon flavor, served on a crumbly biscuit base.",
+                "image": "images/lemon-cheesecake.jpg",
+                "quantity": 3
+            }
+        ],
+        "customer": {
+            "name": "Customer-1",
+            "email": "cust_1@gmail.com",
+            "street": "unnamed",
+            "postal-code": "283948",
+            "city": "cityOfCust1"
+        },
+        "id": "16.892047732196325"
+    }
+]
